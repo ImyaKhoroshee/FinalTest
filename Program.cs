@@ -1,14 +1,14 @@
 ﻿string[] FormNewArray (string[] arg)
 {
-   int count = 0;
+   int short_count = 0;
    // переменная для подсчета длины нового массива
    for (int i = 0; i < arg.Length; i++)
    {
       if(arg[i].Length <= 3)
-      count++;
+      short_count++;
    }
 
-   string[] formedarray = new string[count];
+   string[] formedarray = new string[short_count];
    // инициализация 2-го массива с длиной, которую выше определили
    Console.Write($"New formed array is: [");
    
